@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+h1 {
+  font-family: var(--dancing);
+  font-size: 50px;
+}
+
+.menu-options {
+  font-family: var(--openSans);
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+
+li {
+  cursor: pointer;
+}
