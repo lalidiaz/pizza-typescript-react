@@ -14,8 +14,8 @@ const Header = () => {
           );
         })}
 
-        <span>
-          <IoCartOutline />
+        <span className="cart">
+          <IoCartOutline size={25} />
         </span>
       </div>
     </header>

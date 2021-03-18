@@ -1,0 +1,59 @@
+.pizza-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pizza-individual-card {
+  width: 23%;
+  padding: 10px;
+  margin: 15px;
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--openSans);
+  border-radius: 8px;
+}
+
+.individual-img {
+  width: 80%;
+  height: auto;
+}
+
+.individual-name {
+  padding-top: 10px;
+  color: var(--red);
+  font-family: var(--dancing);
+  font-size: 30px;
+}
+
+.individual-description {
+}
+
+.individual-price {
+  color: var(--red);
+}
+
+.btn {
+  background-color: var(--red);
+  border-radius: 10px;
+  color: white;
+  outline: transparent;
+  border: none;
+  padding: 10px;
+}
+
+.price-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 10px 10px 10px;
+}

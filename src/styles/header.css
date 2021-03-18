@@ -21,3 +21,7 @@ h1 {
 li {
   cursor: pointer;
 }
+
+.cart {
+  cursor: pointer;
+}

@@ -3,6 +3,7 @@ interface PizzaProps {
   name: string;
   description: string;
   price: number;
+  image?: string;
 }
 
 interface Props {
@@ -10,13 +11,19 @@ interface Props {
 }
 
 const Pizza: React.FC<Props> = ({ pizza }) => {
-  const { name, description, price } = pizza;
+  const { name, description, price, image } = pizza;
   return (
-    <li>
-      <p>{name}</p>
-      <p>{description}</p>
-      <p>${price}</p>
-    </li>
+    <div className="pizza-individual-card">
+      <li>
+        <img className="individual-img" src={image} alt="pizza" />
+        <p className="individual-name">{name}</p>
+        <p className="individual-description">{description}</p>
+        <section className="price-btn">
+          <p className="individual-price">${price}</p>
+          <button className="btn">Add to the cart</button>
+        </section>
+      </li>
+    </div>
   );
 };
 
