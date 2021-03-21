@@ -1,21 +1,15 @@
-import { useStateDispatch } from "../context/context";
 import { PizzaProps } from "../types";
+import { AddToCartProps, withAddToCart } from "./AddToCart";
 
-interface Props {
+interface Props extends AddToCartProps {
   pizza: PizzaProps;
 }
 
-const Pizza: React.FC<Props> = ({ pizza }) => {
-  const dispatch = useStateDispatch();
+const Pizza: React.FC<Props> = ({ pizza, addToCart }) => {
   const { name, description, price, image } = pizza;
 
   const handleAddToCartClick = () => {
-    dispatch({
-      type: "ADD_TO_CART",
-      payload: {
-        item: { id: pizza.id, name: pizza.name, price: pizza.price },
-      },
-    });
+    addToCart({ id: pizza.id, name: pizza.name, price: pizza.price });
   };
 
   return (
@@ -35,4 +29,4 @@ const Pizza: React.FC<Props> = ({ pizza }) => {
   );
 };
 
-export default Pizza;
+export default withAddToCart(Pizza);
