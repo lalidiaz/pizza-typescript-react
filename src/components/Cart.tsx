@@ -36,9 +36,10 @@ const Cart: React.FC<State> = (props: Props) => {
             >
               <ul>
                 {state.cart.items.map((item) => {
+                  const { id, name, quantity } = item;
                   return (
-                    <li key={item.id}>
-                      {item.name} &times; {item.quantity}
+                    <li key={id}>
+                      {name} &times; {quantity}
                     </li>
                   );
                 })}
