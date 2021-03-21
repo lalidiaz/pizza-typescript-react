@@ -1,12 +1,5 @@
 import { useStateDispatch } from "../context/context";
-
-interface PizzaProps {
-  id: number;
-  name: string;
-  description: string;
-  price: number;
-  image?: string;
-}
+import { PizzaProps } from "../types";
 
 interface Props {
   pizza: PizzaProps;
