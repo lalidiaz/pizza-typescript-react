@@ -1,22 +1,12 @@
 [
   {
     "id": 1,
-    "name": "Home",
-    "url": "/"
-  },
-  {
-    "id": 2,
     "name": "About",
     "url": "/about"
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "Menu",
     "url": "/menu"
-  },
-  {
-    "id": 4,
-    "name": "Cart",
-    "url": "/cart"
   }
 ]

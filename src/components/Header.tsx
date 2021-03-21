@@ -1,22 +1,23 @@
 import menu from "../data/menu.json";
-import Cart from "./Cart";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header>
-      <h1>Italian Pizza</h1>
+      <Link to="/">
+        <h1>Italian Pizza</h1>
+      </Link>
       <div className="menu-options">
         {menu.map((item) => {
+          const { id, url, name } = item;
           return (
             <ul>
-              <li key={item.id}>{item.name}</li>
+              <Link to={url} key={id}>
+                {name}
+              </Link>
             </ul>
           );
         })}
-
-        <span className="cart">
-          <Cart isOpen={false} />
-        </span>
       </div>
     </header>
   );

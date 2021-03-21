@@ -1,26 +1,24 @@
-import pizzas from "../data/pizzas.json";
-import Pizza from "./Pizza";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import AppStateProvider from "../context/context";
 import Header from "./Header";
 import Landing from "./Landing";
-import AppStateProvider from "../context/context";
-import SpecialOffer from "./SpecialOffer";
+
+import PizzasList from "./PizzasList";
 
 const App = () => {
-  const specialOfferPizza = pizzas.find((pizza) => pizza.specialOffer);
   return (
     <AppStateProvider>
-      <div className="wrapper">
+      <Router>
         <Header />
-        {/* <Landing /> */}
-        {specialOfferPizza && <SpecialOffer pizza={specialOfferPizza} />}
-        <section className="pizzas-section">
-          <ul className="pizza-wrapper">
-            {pizzas.map((pizza) => {
-              return <Pizza key={pizza.id} pizza={pizza} />;
-            })}
-          </ul>
-        </section>
-      </div>
+        <Switch>
+          <Route exact path="/">
+            <Landing />
+          </Route>
+          <Route path="/menu">
+            <PizzasList />
+          </Route>
+        </Switch>
+      </Router>
     </AppStateProvider>
   );
 };

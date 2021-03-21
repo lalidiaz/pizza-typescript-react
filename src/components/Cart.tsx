@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { IoCartOutline } from "react-icons/io5";
 import { AppStateContext } from "../context/context";
 
@@ -14,6 +14,8 @@ const Cart: React.FC<State> = (props: Props) => {
   const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {});
 
   return (
     <AppStateContext.Consumer>
