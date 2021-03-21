@@ -1,5 +1,5 @@
 import menu from "../data/menu.json";
-import { IoCartOutline } from "react-icons/io5";
+import Cart from "./Cart";
 
 const Header = () => {
   return (
@@ -15,7 +15,7 @@ const Header = () => {
         })}
 
         <span className="cart">
-          <IoCartOutline size={25} />
+          <Cart isOpen={false} />
         </span>
       </div>
     </header>

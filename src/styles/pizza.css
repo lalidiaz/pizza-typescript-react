@@ -10,10 +10,9 @@
 }
 
 .pizza-individual-card {
-  width: 23%;
-  padding: 10px;
+  width: 20%;
+  padding: 20px;
   margin: 15px;
-  background: white;
   color: black;
   display: flex;
   flex-direction: column;
@@ -21,6 +20,7 @@
   text-align: center;
   font-family: var(--openSans);
   border-radius: 8px;
+  color: white;
 }
 
 .individual-img {
@@ -36,6 +36,7 @@
 }
 
 .individual-description {
+  font-size: 16px;
 }
 
 .individual-price {
@@ -49,6 +50,7 @@
   outline: transparent;
   border: none;
   padding: 10px;
+  cursor: pointer;
 }
 
 .price-btn {
