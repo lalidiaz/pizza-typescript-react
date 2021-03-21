@@ -5,6 +5,7 @@ export interface AddToCartProps {
   addToCart: (item: Omit<CartItem, "quantity">) => void;
 }
 
+//HOC
 export function withAddToCart<OriginalProps extends AddToCartProps>(
   ChildrenComponent: React.ComponentType<OriginalProps>
 ) {
@@ -31,6 +32,7 @@ export function withAddToCart<OriginalProps extends AddToCartProps>(
   return AddToCartHOC;
 }
 
+//with render props.
 export const WithAddToCartProps: React.FC<{
   children: (props: AddToCartProps) => JSX.Element;
 }> = ({ children }) => {
@@ -45,4 +47,19 @@ export const WithAddToCartProps: React.FC<{
     });
   };
   return children({ addToCart });
+};
+
+//Custom hook
+export const useAddToCart = () => {
+  const dispatch = useStateDispatch();
+
+  const addToCart: AddToCartProps["addToCart"] = (item) => {
+    dispatch({
+      type: "ADD_TO_CART",
+      payload: {
+        item,
+      },
+    });
+  };
+  return addToCart;
 };
