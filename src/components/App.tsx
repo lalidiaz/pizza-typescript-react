@@ -9,7 +9,7 @@ const App = () => {
     <AppStateProvider>
       <div className="wrapper">
         <Header />
-        <Landing />
+        {/* <Landing /> */}
         <section className="pizzas-section">
           <ul className="pizza-wrapper">
             {pizzas.map((pizza) => {

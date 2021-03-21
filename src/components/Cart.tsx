@@ -18,6 +18,9 @@ const Cart: React.FC<State> = (props: Props) => {
   return (
     <AppStateContext.Consumer>
       {(state) => {
+        const itemsCount = state.cart.items.reduce((sum, item) => {
+          return sum + item.quantity;
+        }, 0);
         return (
           <div className="cartContainer">
             <button
@@ -26,7 +29,7 @@ const Cart: React.FC<State> = (props: Props) => {
               onClick={(e) => handleClick(e)}
             >
               <IoCartOutline size={25} />
-              <span>{state.cart.items.length} pizza(s)</span>
+              <span>{itemsCount} pizza(s)</span>
             </button>
             <div
               className="cartDropDown"
