@@ -1,15 +1,11 @@
 import { PizzaProps } from "../types";
-import { AddToCartProps, withAddToCart } from "./AddToCart";
+import { WithAddToCartProps } from "./AddToCart";
 
-interface Props extends AddToCartProps {
+interface Props {
   pizza: PizzaProps;
 }
-const SpecialOffer: React.FC<Props> = ({ pizza, addToCart }) => {
+const SpecialOffer: React.FC<Props> = ({ pizza }) => {
   const { name, description, price, image } = pizza;
-
-  const handleAddToCartClick = () => {
-    addToCart({ id: pizza.id, name: pizza.name, price: pizza.price });
-  };
 
   return (
     <div className="special-offer">
@@ -19,12 +15,27 @@ const SpecialOffer: React.FC<Props> = ({ pizza, addToCart }) => {
       <p className="special-description">{description}</p>
       <section className="special-btn">
         <p className="special-price">${price}</p>
-        <button onClick={handleAddToCartClick} className="btn">
-          Add to the cart
-        </button>
+        <WithAddToCartProps>
+          {({ addToCart }) => {
+            return (
+              <button
+                onClick={() =>
+                  addToCart({
+                    id: pizza.id,
+                    name: pizza.name,
+                    price: pizza.price,
+                  })
+                }
+                className="btn"
+              >
+                Add to the cart
+              </button>
+            );
+          }}
+        </WithAddToCartProps>
       </section>
     </div>
   );
 };
 
-export default withAddToCart(SpecialOffer);
+export default SpecialOffer;
