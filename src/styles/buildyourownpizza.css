@@ -1,0 +1,31 @@
+.build-wrapper {
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: 1;
+  height: 600px;
+  position: relative;
+}
+
+.build-text {
+  margin-top: 100px;
+  color: white;
+  width: 50%;
+  z-index: 3;
+}
+
+.img-container {
+  width: 50%;
+}
+.slices-img {
+  left: 20px;
+  position: absolute;
+}
+
+.abstract-vector {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  z-index: 2;
+}

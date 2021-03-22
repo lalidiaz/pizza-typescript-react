@@ -1,16 +1,23 @@
-.pizza-wrapper {
+.pizzas-section {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   height: auto;
-  justify-content: center;
-  padding: 20px;
+}
+
+aside {
+  background: var(--yellow);
+  width: 30%;
+}
+.pizza-wrapper {
+  padding-top: 100px;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .pizza-individual-card {
-  width: 20%;
+  width: 33%;
   padding: 20px;
   margin: 15px;
   color: black;
@@ -24,40 +31,38 @@
 }
 
 .individual-img {
-  width: 80%;
   height: auto;
 }
 
-.individual-name {
-  padding-top: 10px;
-  color: var(--red);
-  font-family: var(--dancing);
-  font-size: 30px;
+.text-wrapper {
+  width: 100%;
 }
 
-.individual-description {
-  font-size: 16px;
+.individual-name {
+  width: 100%;
+  padding-top: 10px;
+  color: black;
+  font-family: var(--noto);
+  font-size: 22px;
 }
 
 .individual-price {
-  color: var(--red);
+  width: 100%;
+  color: var(--gray);
 }
 
-.btn {
-  background-color: var(--red);
-  border-radius: 10px;
-  color: white;
+.btn-addpizza {
+  width: 100%;
   outline: transparent;
   border: none;
-  padding: 10px;
-  cursor: pointer;
-}
+  border-radius: 100%;
 
-.price-btn {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 20px 10px 10px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: var(--pink);
+  color: white;
 }
 
 .special-offer {

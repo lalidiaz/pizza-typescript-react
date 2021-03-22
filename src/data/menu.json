@@ -8,5 +8,10 @@
     "id": 2,
     "name": "Menu",
     "url": "/menu"
+  },
+  {
+    "id": 3,
+    "name": "Make your pizza",
+    "url": "/make-your-pizza"
   }
 ]

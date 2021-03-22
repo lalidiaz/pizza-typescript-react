@@ -1,23 +1,26 @@
 import menu from "../data/menu.json";
 import { Link } from "react-router-dom";
+import { IoPizzaOutline } from "react-icons/io5";
 
 const Header = () => {
   return (
     <header>
       <Link to="/">
-        <h1>Italian Pizza</h1>
+        <IoPizzaOutline size={40} color="white" />
       </Link>
       <div className="menu-options">
-        {menu.map((item) => {
-          const { id, url, name } = item;
-          return (
-            <ul>
-              <Link to={url} key={id}>
-                {name}
-              </Link>
-            </ul>
-          );
-        })}
+        <ul>
+          {menu.map((item) => {
+            const { id, url, name } = item;
+            return (
+              <li className="link-menu">
+                <Link to={url} key={id}>
+                  {name}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </header>
   );

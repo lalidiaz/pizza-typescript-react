@@ -8,7 +8,7 @@ interface Props {
 const Pizza: React.FC<Props> = ({ pizza }) => {
   const addToCart = useAddToCart();
 
-  const { name, description, price, image } = pizza;
+  const { name, price, image } = pizza;
 
   const handleAddToCartClick = () => {
     addToCart({ id: pizza.id, name: pizza.name, price: pizza.price });
@@ -16,17 +16,14 @@ const Pizza: React.FC<Props> = ({ pizza }) => {
 
   return (
     <div className="pizza-individual-card">
-      <li>
-        <img className="individual-img" src={image} alt="pizza" />
+      <img className="individual-img" src={image} alt="pizza" />
+      <div className="text-wrapper">
+        <button onClick={handleAddToCartClick} className="btn-addpizza">
+          +
+        </button>
+        <p className="individual-price">${price}</p>
         <p className="individual-name">{name}</p>
-        <p className="individual-description">{description}</p>
-        <section className="price-btn">
-          <p className="individual-price">${price}</p>
-          <button onClick={handleAddToCartClick} className="btn">
-            Add to the cart
-          </button>
-        </section>
-      </li>
+      </div>
     </div>
   );
 };
