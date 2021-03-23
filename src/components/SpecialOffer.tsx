@@ -1,5 +1,7 @@
 import { PizzaProps } from "../types";
 import { WithAddToCartProps } from "./AddToCart";
+import "../styles";
+import Title from "../components/Title";
 
 interface Props {
   pizza: PizzaProps;
@@ -8,13 +10,13 @@ const SpecialOffer: React.FC<Props> = ({ pizza }) => {
   const { name, description, price, image } = pizza;
 
   return (
-    <div className="special-offer">
-      <h3>Special offer:</h3>
+    <div className="special-offer-wrapper">
+      <Title text="Special Offer!" />
       <img className="special-img" src={image} alt="pizza" />
       <p className="special-name">{name}</p>
       <p className="special-description">{description}</p>
-      <section className="special-btn">
-        <p className="special-price">${price}</p>
+      <p className="special-price">${price}</p>
+      <section>
         <WithAddToCartProps>
           {({ addToCart }) => {
             return (
@@ -26,7 +28,7 @@ const SpecialOffer: React.FC<Props> = ({ pizza }) => {
                     price: pizza.price,
                   })
                 }
-                className="btn"
+                className="special-btn"
               >
                 Add to the cart
               </button>

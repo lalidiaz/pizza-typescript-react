@@ -1,5 +1,6 @@
 import { PizzaProps } from "../types";
 import { useAddToCart } from "./AddToCart";
+import "../styles";
 
 interface Props {
   pizza: PizzaProps;
@@ -8,7 +9,7 @@ interface Props {
 const Pizza: React.FC<Props> = ({ pizza }) => {
   const addToCart = useAddToCart();
 
-  const { name, price, image } = pizza;
+  const { name, price, image, description } = pizza;
 
   const handleAddToCartClick = () => {
     addToCart({ id: pizza.id, name: pizza.name, price: pizza.price });
@@ -23,6 +24,7 @@ const Pizza: React.FC<Props> = ({ pizza }) => {
         </button>
         <p className="individual-price">${price}</p>
         <p className="individual-name">{name}</p>
+        <p>{description}</p>
       </div>
     </div>
   );

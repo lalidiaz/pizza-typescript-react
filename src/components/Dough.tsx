@@ -5,10 +5,12 @@ import pizzaDoughTwo from "../assets/pizza-dough2.png";
 import abstract from "../assets/vector-blue1.png";
 import vector from "../assets/vector-4.png";
 import "../styles";
+// import Scroll from "../components/Scroll";
 
 const Dough = () => {
   return (
     <div className="dough-wrapper">
+      {/* <Scroll showBelow={500} /> */}
       <section className="dough-text">
         <Title text="IT'S ALL ABOUT THE DOUGH" />
         <Button title="See more" />

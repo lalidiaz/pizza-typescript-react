@@ -4,19 +4,20 @@ import BuildYourOwnPizza from "../components/BuildYourOwnPizza";
 import Button from "../components/Button";
 import Dough from "../components/Dough";
 import NewsletterSocial from "../components/NewsletterSocial";
+import Title from "../components/Title";
 
 const Landing = () => {
   return (
     <>
       <section className="landing-section">
-        <div className="text-wrapper">
-          <h1 className="main-title">
-            It's not just a pizza, it's Saturnina Pizza
-          </h1>
+        <div className="landing-text">
+          <Title text="It's not just a pizza, it's Saturnina Pizza" />
           <Button title="See More" />
-          <button className="down-arrow">
-            <CgArrowLongDown color="white" />
-          </button>
+          <div className="lading-see-more">
+            <button className="down-arrow">
+              <CgArrowLongDown color="white" />
+            </button>
+          </div>
         </div>
       </section>
       <Concept />

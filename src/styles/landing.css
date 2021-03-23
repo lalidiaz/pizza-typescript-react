@@ -1,29 +1,11 @@
 .landing-section {
-  color: var(--red);
+  color: var(--lightblue);
   width: 100%;
   height: 100vh;
   background-image: url(../assets/pizza-slider2.jpeg);
   background-position: center;
   background-size: cover;
   padding: 100px;
-}
-
-.text-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 150px auto;
-}
-.main-title {
-  font-size: 75px;
-  display: flex;
-  width: 55%;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-  font-family: var(--asap);
-  margin-bottom: 30px;
 }
 
 .btn-landing {
@@ -39,7 +21,7 @@
   border: none;
   cursor: pointer;
   width: 200px;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .btn-landing:hover {
@@ -52,4 +34,5 @@
   border: none;
   font-size: 40px;
   cursor: pointer;
+  margin-top: 30px;
 }

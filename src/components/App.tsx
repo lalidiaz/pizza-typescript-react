@@ -3,14 +3,17 @@ import AppStateProvider from "../context/context";
 import Header from "./Header";
 import Landing from "../pages/Landing";
 import About from "../pages/about";
-import PizzasList from "./PizzasList";
+import Menu from "../pages/Menu";
 import Footer from "./Footer";
+// import Scroll from "./Scroll";
 
 const App = () => {
   return (
     <AppStateProvider>
+      {/* <Scroll showBelow={250} /> */}
       <Router>
         <Header />
+
         <Switch>
           <Route exact path="/">
             <Landing />
@@ -19,7 +22,7 @@ const App = () => {
             <About />
           </Route>
           <Route path="/menu">
-            <PizzasList />
+            <Menu />
           </Route>
         </Switch>
         <Footer />

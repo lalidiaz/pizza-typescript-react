@@ -1,0 +1,120 @@
+.pizzas-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  height: auto;
+  background-color: var(--lightblue);
+}
+
+aside {
+  background: var(--yellow);
+  width: 30%;
+  color: white;
+  padding: 150px 30px 0px 30px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+}
+
+.pizzas-categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.pizzalist-categories-title {
+  padding-top: 30px;
+}
+.pizza-wrapper {
+  padding-top: 100px;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pizza-individual-card {
+  width: 33%;
+  padding: 20px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--asap);
+  color: white;
+}
+
+.individual-img {
+  height: auto;
+}
+
+.text-wrapper {
+  width: 100%;
+}
+
+.individual-name {
+  width: 100%;
+  padding-top: 10px;
+  font-family: var(--asap);
+  font-size: 22px;
+}
+
+.individual-price {
+  width: 100%;
+  color: var(--yellow);
+}
+
+.btn-addpizza {
+  width: 100%;
+  outline: transparent;
+  border: 2px solid var(--yellow);
+  border-radius: 100%;
+  font-size: 30px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  background-color: var(--white);
+  color: var(--yellow);
+}
+.btn-addpizza:hover {
+  background-color: var(--yellow);
+  color: white;
+}
+
+/* special offer */
+
+.special-offer-wrapper {
+  background-color: var(--red);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.special-img {
+  width: 200px;
+  margin: auto;
+}
+
+.special-btn {
+  background-color: var(--lightblue);
+  color: var(--yellow);
+  border: none;
+  width: 60%;
+  margin: 10px auto;
+  font-family: var(--asap);
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: transparent;
+  height: 50px;
+}
+
+.special-btn:hover {
+  background-color: var(--yellow);
+  color: var(--lightblue);
+}

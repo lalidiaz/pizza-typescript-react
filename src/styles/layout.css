@@ -34,46 +34,10 @@ ul {
   list-style: none;
 }
 
-.about-wrapper {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.landing-text {
+  text-align: center;
+  padding-top: 200px;
 }
-.text-wrapper {
-  color: #f8f8f8;
-  font-family: var(--noto);
-  z-index: 100;
-  top: 300px;
-}
-p {
-  font-family: var(--openSans);
-  width: 40%;
-}
-.about-img {
-  top: 100px;
-  z-index: 1;
-}
-
-.top-header-wrapper {
-  background-color: black;
-  height: 30px;
-  width: 100%;
-  color: #ead7ba;
-  position: fixed;
-  font-family: var(--noto);
-  text-transform: uppercase;
-  font-size: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.our-story-wrapper {
-  background: red;
-}
-
 .title-component {
   font-size: 55px;
   margin-top: 10px;
@@ -82,8 +46,17 @@ p {
 
 .description-component {
   font-size: 14px;
-  color: #fff;
+  color: white;
   line-height: 28px;
   margin-bottom: 10px;
   width: 80%;
+}
+
+.to-top-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  z-index: 1000;
+  border: 1px solid black;
+  background-color: transparent;
 }
