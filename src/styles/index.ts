@@ -6,3 +6,6 @@ import "./pizza.css";
 import "./cart.css";
 import "./concept.css";
 import "./buildyourownpizza.css";
+import "./dough.css";
+import "./newsletter.css";
+import "./footer.css";

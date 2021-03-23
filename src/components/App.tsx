@@ -4,13 +4,12 @@ import Header from "./Header";
 import Landing from "../pages/Landing";
 import About from "../pages/about";
 import PizzasList from "./PizzasList";
-import TopHeader from "./TopHeader";
+import Footer from "./Footer";
 
 const App = () => {
   return (
     <AppStateProvider>
       <Router>
-        {/* <TopHeader /> */}
         <Header />
         <Switch>
           <Route exact path="/">
@@ -23,6 +22,7 @@ const App = () => {
             <PizzasList />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </AppStateProvider>
   );

@@ -2,7 +2,7 @@
   color: var(--red);
   width: 100%;
   height: 100vh;
-  background-image: url(../assets/pizza-slider1.jpeg);
+  background-image: url(../assets/pizza-slider2.jpeg);
   background-position: center;
   background-size: cover;
   padding: 100px;
@@ -53,4 +53,3 @@
   font-size: 40px;
   cursor: pointer;
 }
-
