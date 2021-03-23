@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { IoCartOutline } from "react-icons/io5";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import { AppStateContext } from "../context/context";
 
 interface Props {}
@@ -30,7 +30,7 @@ const Cart: React.FC<State> = (props: Props) => {
               type="button"
               onClick={(e) => handleClick(e)}
             >
-              <IoCartOutline size={25} />
+              <AiOutlineShoppingCart size={25} />
               <span>{itemsCount} pizza(s)</span>
             </button>
             <div

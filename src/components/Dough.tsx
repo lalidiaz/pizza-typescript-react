@@ -12,7 +12,7 @@ const Dough = () => {
     <div className="dough-wrapper">
       {/* <Scroll showBelow={500} /> */}
       <section className="dough-text">
-        <Title text="IT'S ALL ABOUT THE DOUGH" />
+        <Title>It's all anout the dough</Title>
         <Button title="See more" />
       </section>
       <section className="dough-images">

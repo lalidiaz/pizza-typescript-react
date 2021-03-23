@@ -10,7 +10,7 @@ const PizzasList = () => {
   return (
     <section className="pizzas-section">
       <aside>
-        <Title text="Our selection of pizzas:" />
+        <Title> Our selection of pizzas:</Title>
         <h3 className="pizzalist-categories-title">Categories:</h3>
         <ul className="pizzas-categories">
           <li>Veggies</li>

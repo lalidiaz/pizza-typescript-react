@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Green Pepper",
+    "image": "./ingredient1.webp"
+  },
+  {
+    "id": 2,
+    "name": "Rice Flour",
+    "image": "./ingredient2.webp"
+  },
+  {
+    "id": 3,
+    "name": "Onion",
+    "image": "./ingredient3.webp"
+  },
+  {
+    "id": 4,
+    "name": "Basil",
+    "image": "./ingredient4.webp"
+  },
+  {
+    "id": 5,
+    "name": "Tomato",
+    "image": "./ingredient5.webp"
+  },
+  {
+    "id": 6,
+    "name": "Chili pepper",
+    "image": "./ingredient6.webp"
+  },
+  {
+    "id": 7,
+    "name": "Garlic",
+    "image": "./ingredient7.webp"
+  },
+  {
+    "id": 8,
+    "name": "Pepper",
+    "image": "./ingredient8.webp"
+  },
+  {
+    "id": 9,
+    "name": "Goat Cheese",
+    "image": "./ingredient9.webp"
+  }
+]

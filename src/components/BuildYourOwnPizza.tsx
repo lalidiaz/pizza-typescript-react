@@ -13,7 +13,7 @@ const BuildYourOwnPizza = () => {
         <img src={abstract} alt="abstract-vector" className="abstract-vector" />
       </div>
       <div className="build-text">
-        <Title text="Build your own pizza" />
+        <Title>Build your own pizza</Title>
         <Description text="Lorem knldjbwjkbgojmflengpngw2nenpkqen;kgn;kenglkewnblnbgjowebglenlek" />
         <Button title="see more" />
       </div>

@@ -9,7 +9,7 @@ const Concept = () => {
     <section className="concept-wrapper">
       <div className="concept-text-container">
         <h4 className="concept">concept</h4>
-        <Title text="So, where is the magic?" />
+        <Title>So, where is the magic?</Title>
         <Description
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, ex
           cupiditate, quidem accusamus, adipisci ipsa explicabo minus distinctio

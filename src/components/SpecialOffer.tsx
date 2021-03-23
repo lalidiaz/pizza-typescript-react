@@ -11,7 +11,7 @@ const SpecialOffer: React.FC<Props> = ({ pizza }) => {
 
   return (
     <div className="special-offer-wrapper">
-      <Title text="Special Offer!" />
+      <Title>Special Offer!</Title>
       <img className="special-img" src={image} alt="pizza" />
       <p className="special-name">{name}</p>
       <p className="special-description">{description}</p>

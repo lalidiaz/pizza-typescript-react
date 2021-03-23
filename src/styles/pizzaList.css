@@ -93,8 +93,13 @@ aside {
   justify-content: center;
   align-content: center;
   text-align: center;
+  margin-top: 200px;
 }
 
+.special-price {
+  color: var(--lightblue);
+  font-size: 22px;
+}
 .special-img {
   width: 200px;
   margin: auto;

@@ -15,7 +15,7 @@ const NewsletterSocial = () => {
       <div className="letter">
         <BsEnvelope size={100} />
         <div className="line" />
-        <Title text="The latest on Saturnina pizza" />
+        <Title>The latest on Saturnina pizza</Title>
       </div>
       <div className="email-btn">
         <input placeholder="Email adress" />

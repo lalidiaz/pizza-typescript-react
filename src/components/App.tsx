@@ -5,6 +5,8 @@ import Landing from "../pages/Landing";
 import About from "../pages/about";
 import Menu from "../pages/Menu";
 import Footer from "./Footer";
+import MakeYourOwnPizza from "../pages/MakeYourOwnPizza";
+
 // import Scroll from "./Scroll";
 
 const App = () => {
@@ -13,7 +15,6 @@ const App = () => {
       {/* <Scroll showBelow={250} /> */}
       <Router>
         <Header />
-
         <Switch>
           <Route exact path="/">
             <Landing />
@@ -23,6 +24,9 @@ const App = () => {
           </Route>
           <Route path="/menu">
             <Menu />
+          </Route>
+          <Route path="/make-your-own-pizza">
+            <MakeYourOwnPizza />
           </Route>
         </Switch>
         <Footer />

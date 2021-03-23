@@ -11,7 +11,7 @@ const Landing = () => {
     <>
       <section className="landing-section">
         <div className="landing-text">
-          <Title text="It's not just a pizza, it's Saturnina Pizza" />
+          <Title>It's not just a pizza, it's Saturnina Pizza</Title>
           <Button title="See More" />
           <div className="lading-see-more">
             <button className="down-arrow">
