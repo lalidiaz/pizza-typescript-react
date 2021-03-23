@@ -4,6 +4,10 @@ import Title from "../components/Title";
 import Description from "../components/Description";
 import vectorOne from "../assets/vector-blue.png";
 import vectorTwo from "../assets/vector-2.png";
+import vectorThree from "../assets/vector-4.png";
+import vectorFour from "../assets/vector-blue1.png";
+import vectorFive from "../assets/vector-pink.png";
+import vectorSix from "../assets/vector-pink2.png";
 
 const About = () => {
   return (
@@ -17,6 +21,11 @@ const About = () => {
         src={vectorTwo}
         alt="abstract-vector"
         className="about-abstract-two"
+      />
+      <img
+        src={vectorSix}
+        alt="abstract-vector"
+        className="about-abstract-six"
       />
       <div className="about-text">
         <Title>Hi, I am Saturnina.</Title>
@@ -34,6 +43,21 @@ const About = () => {
           src={saturninaTwo}
           alt="saturina-cooking"
           className="saturnina-two-img"
+        />
+        <img
+          src={vectorThree}
+          alt="abstract-vector"
+          className="about-abstract-three"
+        />
+        <img
+          src={vectorFour}
+          alt="abstract-vector"
+          className="about-abstract-four"
+        />
+        <img
+          src={vectorFive}
+          alt="abstract-vector"
+          className="about-abstract-five"
         />
       </div>
     </section>
