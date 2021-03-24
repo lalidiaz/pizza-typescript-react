@@ -16,7 +16,7 @@ const MakeYourOwnPizza = () => {
             <ul className="makeyourown-ul">
               {ingredients.map((ingredient) => {
                 const { id, name } = ingredient;
-                return <li key={id}>{name}</li>;
+                return <li className='makeyourown-li' key={id}>{name}</li>;
               })}
             </ul>
           </div>

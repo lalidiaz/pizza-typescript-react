@@ -8,11 +8,11 @@ import SpecialOffer from "./SpecialOffer";
 const PizzasList = () => {
   const specialOfferPizza = pizzas.find((pizza) => pizza.specialOffer);
   return (
-    <section className="pizzas-section">
+    <section className="pizzalist-wrapper">
       <aside>
         <Title> Our selection of pizzas:</Title>
         <h3 className="pizzalist-categories-title">Categories:</h3>
-        <ul className="pizzas-categories">
+        <ul className="pizzalist-categories">
           <li>Veggies</li>
           <li>Exotic Flavour</li>
           <li>Classic Flavour</li>
@@ -22,14 +22,18 @@ const PizzasList = () => {
 
         <Cart isOpen={false} />
 
-        <section className="pizza-sale">
+        <section className="pizzalist-sale">
           {specialOfferPizza && <SpecialOffer pizza={specialOfferPizza} />}
         </section>
       </aside>
 
-      <ul className="pizza-wrapper">
+      <ul className="pizzalist-grid">
         {pizzas.map((pizza) => {
-          return <Pizza key={pizza.id} pizza={pizza} />;
+          return (
+            <li className="pizzalist-grid-li">
+              <Pizza key={pizza.id} pizza={pizza} />
+            </li>
+          );
         })}
       </ul>
     </section>

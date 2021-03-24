@@ -1,13 +1,18 @@
-import "./layout.css";
-import "./typography.css";
-import "./header.css";
-import "./landing.css";
-import "./pizzaList.css";
-import "./cart.css";
-import "./concept.css";
-import "./buildyourownpizza.css";
-import "./dough.css";
-import "./newsletter.css";
-import "./footer.css";
-import "./about.css";
-import "./makeyourown.css";
+// variables
+import "./_variables.scss";
+
+//Mixins - media queries
+import "./_mixins.scss";
+
+//Styles
+import "./layout.scss";
+import "./pizzalist.scss";
+import "./cart.scss";
+import "./concept.scss";
+import "./dough.scss";
+import "./newsletter.scss";
+import "./about.scss";
+import "./makeyourown.scss";
+import "./about.scss";
+import "./buildyourownpizza.scss";
+import "./pizza.scss";

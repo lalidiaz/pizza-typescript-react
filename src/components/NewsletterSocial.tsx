@@ -7,17 +7,17 @@ import Button from "../components/Button";
 const NewsletterSocial = () => {
   return (
     <section className="newsletter-wrapper">
-      <div className="social">
+      <div className="newsletter-social">
         <AiOutlineInstagram size={40} />
         <IoLogoTiktok size={40} />
         <AiOutlineFacebook size={40} />
       </div>
-      <div className="letter">
+      <div className="newsletter-letter">
         <BsEnvelope size={100} />
-        <div className="line" />
+        <div className="newsletter-line" />
         <Title>The latest on Saturnina pizza</Title>
       </div>
-      <div className="email-btn">
+      <div className="newsletter-email-btn">
         <input placeholder="Email adress" />
         <Button title="send" />
       </div>

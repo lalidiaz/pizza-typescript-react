@@ -24,9 +24,9 @@ const Cart: React.FC<State> = (props: Props) => {
           return sum + item.quantity;
         }, 0);
         return (
-          <div className="cartContainer">
+          <div className="cart-container">
             <button
-              className="btn"
+              className="cart-btn"
               type="button"
               onClick={(e) => handleClick(e)}
             >
@@ -34,7 +34,7 @@ const Cart: React.FC<State> = (props: Props) => {
               <span>{itemsCount} pizza(s)</span>
             </button>
             <div
-              className="cartDropDown"
+              className="cart-dropdown"
               style={{
                 display: isOpen ? "block" : "none",
               }}

@@ -1,0 +1,51 @@
+.pizzalist-grid-li {
+  width: 33%;
+  height: 500px;
+  padding: 10px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--asap);
+  color: white;
+  margin: 10px;
+
+  .pizza-individual-img {
+    height: 70%;
+    width: 100%;
+  }
+  .pizza-individual-text {
+    .btn-addpizza {
+      width: 100%;
+      outline: transparent;
+      border: 2px solid var(--yellow);
+      border-radius: 100%;
+      font-size: 30px;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+      background-color: var(--white);
+      color: var(--yellow);
+      &:hover {
+        background-color: var(--yellow);
+        color: white;
+      }
+    }
+    .pizza-individual-price {
+      width: 100%;
+      color: var(--yellow);
+    }
+    .pizza-individual-name {
+      width: 100%;
+      padding-top: 5px;
+      font-family: var(--asap);
+      font-size: 22px;
+    }
+    .pizza-individual-description {
+      font-size: 16px;
+      padding: 5px;
+    }
+  }
+}

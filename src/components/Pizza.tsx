@@ -16,17 +16,17 @@ const Pizza: React.FC<Props> = ({ pizza }) => {
   };
 
   return (
-    <div className="pizza-individual-card">
-      <img className="individual-img" src={image} alt="pizza" />
-      <div className="text-wrapper">
+    <section>
+      <img className="pizza-individual-img" src={image} alt="pizza" />
+      <div className="pizza-individual-text">
         <button onClick={handleAddToCartClick} className="btn-addpizza">
           +
         </button>
-        <p className="individual-price">${price}</p>
-        <p className="individual-name">{name}</p>
-        <p>{description}</p>
+        <p className="pizza-individual-price">${price}</p>
+        <p className="pizza-individual-name">{name}</p>
+        <p className="pizza-individual-description">{description}</p>
       </div>
-    </div>
+    </section>
   );
 };
 
