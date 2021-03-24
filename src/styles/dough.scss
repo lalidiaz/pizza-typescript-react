@@ -1,3 +1,5 @@
+@import "./mixins";
+
 .dough-wrapper {
   color: var(--lightblue);
   width: 100%;
@@ -6,6 +8,9 @@
   z-index: 0;
   display: flex;
   justify-content: space-around;
+
+  @include desktop {
+  }
 
   .dough-text {
     width: 50%;
@@ -27,6 +32,20 @@
       right: 400px;
       top: 100px;
       z-index: 3;
+    }
+    .abstract-img {
+      width: 400px;
+      position: absolute;
+      top: 10;
+      right: 0;
+      z-index: 2;
+      @include desktop {
+        width: 600px;
+        position: absolute;
+        top: 20;
+        right: 0;
+        z-index: 2;
+      }
     }
 
     .vector-img {

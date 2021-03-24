@@ -1,5 +1,5 @@
 import saturninaOne from "../assets/saturnina1.jpeg";
-import saturninaTwo from "../assets/saturnina2.jpeg";
+import saturninaTwo from "../assets/woman-pizza.jpg";
 import Title from "../components/Title";
 import Description from "../components/Description";
 import vectorOne from "../assets/vector-blue.png";

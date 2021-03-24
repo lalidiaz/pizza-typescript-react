@@ -9,12 +9,12 @@ import Title from "../components/Title";
 const Landing = () => {
   return (
     <>
-      <section className="landing-section">
+      <section className="landing-wrapper">
         <div className="landing-text">
           <Title>It's not just a pizza, it's Saturnina Pizza</Title>
           <Button title="See More" />
           <div className="lading-see-more">
-            <button className="down-arrow">
+            <button className="lading-down-arrow">
               <CgArrowLongDown color="white" />
             </button>
           </div>

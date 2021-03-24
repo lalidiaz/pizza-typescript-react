@@ -21,8 +21,8 @@ const Concept = () => {
           See More
         </button>
       </div>
-      <div className="image-concept">
-        <img src={pizzaConcept} alt="concept-pizza" />
+      <div>
+        <img src={pizzaConcept} alt="concept-pizza" className="concept-image" />
       </div>
     </section>
   );

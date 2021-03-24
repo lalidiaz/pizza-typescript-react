@@ -1,3 +1,5 @@
+@import "./mixins";
+
 *,
 *::after,
 *::before {
@@ -7,61 +9,82 @@
 }
 
 html,
-body {
-  height: 100%;
-  width: 100%;
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  // height: 100%;
+  // width: 100%;
+  box-sizing: border-box;
   font-family: var(--asap);
+  border: 4px solid blue;
+}
 
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-  ul {
-    list-style: none;
-  }
+ul {
+  list-style: none;
+}
 
-  .landing-text {
-    text-align: center;
-    padding-top: 200px;
-  }
-  .title-component {
+.lading-down-arrow {
+  background: transparent;
+  outline: transparent;
+  font-size: 50px;
+  border: none;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.landing-text {
+  text-align: center;
+  padding-top: 200px;
+}
+.title-component {
+  text-transform: uppercase;
+  font-size: 30px;
+
+  @include desktop {
     font-size: 55px;
     margin-top: 10px;
-    text-transform: uppercase;
   }
-  .description-component {
-    font-size: 14px;
-    color: white;
-    line-height: 28px;
-    margin-bottom: 10px;
-    width: 80%;
-  }
+}
+.description-component {
+  font-size: 14px;
+  color: white;
+  line-height: 28px;
+  margin-bottom: 10px;
+  width: 80%;
+}
 
-  .landing-section {
-    color: var(--lightblue);
-    width: 100%;
-    height: 100vh;
-    background-image: url(../assets/pizza-slider2.jpeg);
-    background-position: center;
-    background-size: cover;
-    padding: 100px;
-  }
+.landing-wrapper {
+  color: var(--lightblue);
+  min-width: 100%;
+  height: 600px;
+  background-image: url(../assets/pizza-slider4.jpeg);
+  background-position: center;
+  background-size: cover;
+  padding: 100px;
+}
 
-  footer {
+footer {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  padding: 30px;
+  background: var(--yellow);
+  color: var(--lightblue);
+  justify-content: space-between;
+  align-items: center;
+  // position: fixed;
+  bottom: 0;
+
+  .footer-social-media {
     display: flex;
-    height: 100px;
-    width: 100%;
-    padding: 30px;
-    background: var(--yellow);
-    color: var(--lightblue);
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-
-    .footer-social-media {
-      display: flex;
+    flex-direction: row;
+    .footer-social-box {
       border: 2px solid var(--lightblue);
       height: 45px;
       width: 45px;
@@ -75,58 +98,65 @@ body {
       }
     }
   }
-  header {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    padding: 20px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  padding: 20px;
+  top: 20px;
+  z-index: 101;
+
+  @include desktop {
+    // position: fixed;
     top: 20px;
     z-index: 101;
-    .header-menu-options {
-      font-family: var(--asap);
-      font-weight: lighter;
-      width: 100%;
-      color: white;
-    }
-    ul {
+  }
+  .header-menu-options {
+    font-family: var(--asap);
+    font-weight: lighter;
+    width: 100%;
+    color: white;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    .header-link-menu {
+      cursor: pointer;
       list-style: none;
-      display: flex;
-      justify-content: space-around;
-      .header-link-menu {
-        cursor: pointer;
-        list-style: none;
-        position: relative;
-        padding: 7px 25px;
-        font-size: 23px;
-        text-align: center;
-        border-radius: 10px;
-        &:hover {
-          background-color: var(--lightblue);
-          font-weight: bold;
-        }
+      position: relative;
+      padding: 7px 25px;
+      font-size: 23px;
+      text-align: center;
+      border-radius: 10px;
+      &:hover {
+        background-color: var(--lightblue);
+        font-weight: bold;
       }
     }
   }
+}
 
-  .btn-component {
-    background-color: var(--yellow);
-    text-transform: uppercase;
-    font-size: 24px;
-    padding: 7px 26px;
-    display: inline-block;
-    border-radius: 6px;
+.btn-component {
+  background-color: var(--yellow);
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 7px 26px;
+  display: inline-block;
+  border-radius: 6px;
+  color: var(--lightblue);
+  outline: transparent;
+  font-family: var(--asap);
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  margin-top: 30px;
+
+  &:hover {
+    background-color: white;
     color: var(--lightblue);
-    outline: transparent;
-    font-family: var(--asap);
-    border: none;
-    cursor: pointer;
-    width: 200px;
-    margin-top: 30px;
-
-    &:hover {
-      background-color: var(--lightblue);
-      color: white;
-    }
   }
 }

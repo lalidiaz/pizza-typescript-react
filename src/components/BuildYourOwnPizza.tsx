@@ -14,7 +14,7 @@ const BuildYourOwnPizza = () => {
       </div>
       <div className="build-text">
         <Title>Build your own pizza</Title>
-        <Description text="Lorem knldjbwjkbgojmflengpngw2nenpkqen;kgn;kenglkewnblnbgjowebglenlek" />
+        <Description text="Have fun and choose and build your own pizza." />
         <Button title="see more" />
       </div>
     </section>

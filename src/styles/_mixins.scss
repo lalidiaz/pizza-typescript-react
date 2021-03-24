@@ -3,18 +3,18 @@
 // 769px — 1024px: Small screens, laptops.
 
 @mixin phone {
-  @media (max-width: 599px) {
+  @media (max-width: 480px) {
     @content;
   }
 }
 @mixin tablet {
-  @media (min-width: 600px) {
+  @media (max-width: 768px) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: 1200px) {
+  @media (min-width: 769px) {
     @content;
   }
 }
