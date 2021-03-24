@@ -6,8 +6,16 @@
   justify-content: center;
   align-content: center;
   z-index: 1;
-  height: 600px;
+  height: 450px;
   position: relative;
+
+  @include respond(desktop) {
+    height: 550px;
+  }
+  @include respond(desktopxl) {
+    height: 580px;
+  }
+
   .img-container {
     width: 50%;
 
@@ -15,25 +23,54 @@
       left: 0px;
       position: absolute;
       z-index: 3;
-      @include desktop {
+      height: auto;
+      width: 300px;
+
+      @include respond(tablet) {
+        width: 400px;
+      }
+
+      @include respond(desktop) {
         left: 20px;
+        width: 500px;
+        height: auto;
+      }
+
+      @include respond(desktopxl) {
+        width: 500px;
       }
     }
 
     .abstract-vector {
       position: absolute;
-      top: 40px;
+      top: 90px;
       right: 0px;
       z-index: 2;
+      width: 300px;
+
+      @include respond(desktop) {
+        width: 500px;
+        top: 40px;
+      }
+      @include respond(desktopxl) {
+        width: 500px;
+        top: 40px;
+      }
     }
   }
   .build-text {
-    padding: 100px 0px 0px 0px;
+    padding-top: 200px;
     color: white;
-    width: 50%;
+    width: 100%;
     z-index: 3;
 
-    @include desktop {
+    @include respond(tablet) {
+      padding-top: 150px;
+      text-align: center;
+    }
+
+    @include respond(desktop) {
+      padding-top: 100px;
       width: 50%;
     }
   }
