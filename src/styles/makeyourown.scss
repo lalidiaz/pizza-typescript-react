@@ -1,9 +1,20 @@
+@import "./mixins";
+
 .makeyourown-wrapper {
   width: 100%;
   height: 100vh;
+  min-height: 100%;
   background-color: var(--pink);
   display: flex;
   z-index: 1;
+
+  @include respond(tablet) {
+  }
+  @include respond(desktop) {
+  }
+  @include respond(desktopxl) {
+  }
+
   .makeyourown-text {
     width: 50%;
     height: 100%;
@@ -13,7 +24,7 @@
       z-index: 4;
       padding-top: 200px;
       padding-left: 30px;
-      color: var(--lightblue);
+      color: white;
       .makeyourown-ingredients-list {
         .makeyourown-ul {
           display: flex;
@@ -30,74 +41,235 @@
         }
       }
     }
-    .abstractTwo {
-      top: 250px;
+    .makeyourown-abstractTwo {
+      top: 100px;
       left: 0px;
       z-index: 3;
       position: relative;
+
+      @include respond(tablet) {
+        top: 250px;
+      }
+      @include respond(desktop) {
+        top: 250px;
+      }
+      @include respond(desktopxl) {
+        top: 250px;
+      }
     }
-    .abstract {
+    .makeyourown-abstract {
       position: absolute;
-      width: 600px;
+      width: 350px;
       top: 60px;
       left: 20px;
       z-index: 2;
+
+      @include respond(tablet) {
+        width: 500px;
+      }
+      @include respond(desktop) {
+        width: 500px;
+      }
+      @include respond(desktopxl) {
+        width: 600px;
+      }
     }
   }
   .makeyourown-images {
     width: 50%;
     height: 100%;
+
     article:nth-child(1) {
       position: absolute;
-      top: 160px;
-      right: 200px;
+      top: 100px;
+      right: 100px;
+      z-index: 3;
+
+      @include respond(tablet) {
+        top: 200px;
+        right: 20px;
+      }
+      @include respond(desktop) {
+        top: 160px;
+        right: 200px;
+      }
+      @include respond(desktopxl) {
+        top: 160px;
+        right: 200px;
+      }
     }
     article:nth-child(2) {
       position: absolute;
       top: 300px;
-      right: 300px;
+      right: 10px;
+      z-index: 3;
+
+      @include respond(tablet) {
+        top: 300px;
+        right: 300px;
+      }
+      @include respond(desktop) {
+        top: 300px;
+        right: 300px;
+      }
+      @include respond(desktopxl) {
+        top: 300px;
+        right: 300px;
+      }
     }
 
     article:nth-child(3) {
       position: absolute;
-      top: 500px;
-      right: 150px;
+      top: 250px;
+      right: 100px;
+      z-index: 3;
+
+      @include respond(tablet) {
+        top: 550px;
+        right: 150px;
+      }
+      @include respond(desktop) {
+        top: 500px;
+        right: 150px;
+      }
+      @include respond(desktopxl) {
+        top: 500px;
+        right: 150px;
+      }
     }
 
     article:nth-child(4) {
       position: absolute;
-      top: 150px;
-      right: 400px;
+      top: 440px;
+      right: 20px;
+      z-index: 3;
+
+      @include respond(tablet) {
+        top: 420px;
+        right: 100px;
+      }
+      @include respond(desktop) {
+        top: 350px;
+        right: 100px;
+      }
+      @include respond(desktopxl) {
+        top: 410px;
+        right: 50px;
+      }
     }
 
     article:nth-child(5) {
       position: absolute;
-      top: 100px;
-      right: 100px;
+      top: 30px;
+      right: 20px;
+      z-index: 3;
+
+      @include respond(tablet) {
+        top: 100px;
+      }
+      @include respond(desktop) {
+        top: 100px;
+      }
+      @include respond(desktopxl) {
+        top: 100px;
+      }
     }
 
     article:nth-child(6) {
       position: absolute;
       top: 50px;
-      right: 700px;
+      right: 250px;
+      z-index: 3;
+
+      @include respond(desktop) {
+        top: 50px;
+        right: 400px;
+      }
+      @include respond(desktopxl) {
+        top: 50px;
+        right: 700px;
+      }
     }
 
     article:nth-child(7) {
       position: absolute;
-      top: 280px;
-      right: 700px;
+      top: 400px;
+      right: 150px;
+      z-index: 3;
+
+      @include respond(tablet) {
+        top: 280px;
+        right: 200px;
+      }
+      @include respond(desktop) {
+        top: 280px;
+        right: 440px;
+      }
+      @include respond(desktopxl) {
+        top: 280px;
+        right: 500px;
+      }
     }
 
     article:nth-child(8) {
       position: absolute;
-      top: 500px;
-      right: 400px;
+      top: 600px;
+      right: 50px;
+      z-index: 3;
+
+      @include respond(tablet) {
+        top: 500px;
+        right: 300px;
+      }
+      @include respond(desktop) {
+        top: 500px;
+        right: 400px;
+      }
+      @include respond(desktopxl) {
+        top: 500px;
+        right: 400px;
+      }
     }
 
     article:nth-child(9) {
       position: absolute;
       top: 500px;
-      left: 100px;
+      right: 130px;
+      z-index: 3;
+
+      @include respond(tablet) {
+        top: 550px;
+        right: 300px;
+      }
+      @include respond(desktop) {
+        top: 550px;
+        right: 350px;
+      }
+      @include respond(desktopxl) {
+        top: 550px;
+        right: 350px;
+      }
+    }
+
+    .makeyourown-blue {
+      width: 300px;
+      top: 400px;
+      right: 10px;
+      position: absolute;
+
+      @include respond(tablet) {
+        width: 350px;
+        top: 300px;
+        right: 20px;
+      }
+      @include respond(desktop) {
+        width: 500px;
+        top: 100px;
+      }
+      @include respond(desktopxl) {
+        width: 700px;
+        top: 200px;
+      }
     }
   }
 }

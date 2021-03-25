@@ -16,14 +16,18 @@ const MakeYourOwnPizza = () => {
             <ul className="makeyourown-ul">
               {ingredients.map((ingredient) => {
                 const { id, name } = ingredient;
-                return <li className='makeyourown-li' key={id}>{name}</li>;
+                return (
+                  <li className="makeyourown-li" key={id}>
+                    {name}
+                  </li>
+                );
               })}
             </ul>
           </div>
         </div>
 
-        <img src={abstractTwo} alt="vector-abstract" className="abstractTwo" />
-        <img src={abstract} alt="vector-abstract" className="abstract" />
+        <img src={abstractTwo} alt="vector-abstract" className="makeyourown-abstractTwo" />
+        <img src={abstract} alt="vector-abstract" className="makeyourown-abstract" />
       </div>
 
       <div className="makeyourown-images">
@@ -35,7 +39,11 @@ const MakeYourOwnPizza = () => {
             </article>
           );
         })}
-        <img src={abstractThree} alt="abstract-shape" />
+        <img
+          src={abstractThree}
+          alt="abstract-shape"
+          className="makeyourown-blue"
+        />
       </div>
     </div>
   );
