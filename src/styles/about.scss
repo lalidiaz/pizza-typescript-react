@@ -1,10 +1,10 @@
 @import "./mixins";
 
 .about-wrapper {
-  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   background-color: var(--yellow);
   margin: auto;
@@ -13,87 +13,193 @@
   position: relative;
   z-index: 1;
 
+  @include respond(tablet) {
+    flex-direction: row;
+  }
+  @include respond(desktop) {
+    flex-direction: row;
+  }
+  @include respond(desktopxl) {
+    flex-direction: row;
+  }
+
   .about-abstract-one {
     position: absolute;
     z-index: 1;
-    width: 500px;
+    width: 200px;
     height: auto;
     left: 0;
+
+    @include respond(tablet) {
+      width: 300px;
+    }
+    @include respond(desktop) {
+      width: 500px;
+    }
+    @include respond(desktopxl) {
+      width: 500px;
+    }
   }
 
   .about-abstract-two {
     position: absolute;
     z-index: 2;
     left: 0;
-    top: 400px;
+    top: 300px;
+
+    @include respond(tablet) {
+      top: 300px;
+    }
+    @include respond(desktop) {
+      top: 320px;
+    }
+    @include respond(desktopxl) {
+      top: 400px;
+    }
   }
 
   .about-abstract-six {
     position: absolute;
     z-index: 2;
     left: 10px;
-    top: 140px;
-    width: 300px;
+    top: 160px;
+    width: 190px;
+
+    @include respond(tablet) {
+      width: 250px;
+      top: 140px;
+    }
+    @include respond(desktop) {
+      width: 300px;
+      top: 140px;
+    }
+    @include respond(desktopxl) {
+      width: 300px;
+      top: 140px;
+    }
   }
 
   .about-text {
     color: white;
-    width: 50%;
+    width: 100%;
     z-index: 4;
+
+    @include respond(tablet) {
+      width: 50%;
+    }
+    @include respond(desktop) {
+      width: 50%;
+    }
+    @include respond(desktopxl) {
+      width: 50%;
+    }
   }
 
   .about-images {
-    width: 50%;
+    width: 100%;
+
+    @include respond(tablet) {
+      width: 50%;
+    }
+    @include respond(desktop) {
+      width: 50%;
+    }
+    @include respond(desktopxl) {
+      width: 50%;
+    }
 
     .saturnina-one-img {
-      width: 600px;
+      width: 300px;
       height: auto;
-      position: absolute;
       top: 200px;
       z-index: 2;
+
+      @include respond(tablet) {
+        width: 350px;
+        position: absolute;
+      }
+      @include respond(desktop) {
+        width: 450px;
+        position: absolute;
+      }
+      @include respond(desktopxl) {
+        width: 600px;
+        position: absolute;
+      }
     }
 
     .saturnina-two-img {
-      width: 400px;
+      width: 150px;
       height: auto;
       position: absolute;
-      top: 500px;
-      right: 30px;
+      top: 400px;
+      right: 10px;
       z-index: 3;
+
+      @include respond(tablet) {
+        width: 200px;
+        top: 370px;
+        right: 30px;
+      }
+      @include respond(desktop) {
+        width: 300px;
+        top: 450px;
+        right: 30px;
+      }
+      @include respond(desktopxl) {
+        width: 400px;
+        top: 500px;
+        right: 30px;
+      }
     }
 
     .about-abstract-three {
-      width: 400px;
+      width: 250px;
       height: auto;
       position: absolute;
       top: 10px;
       right: 0px;
       z-index: 4;
+
+      @include respond(tablet) {
+        width: 300px;
+      }
+      @include respond(desktop) {
+        width: 350px;
+      }
+      @include respond(desktopxl) {
+        width: 400px;
+      }
     }
 
     .about-abstract-four {
-      width: 800px;
+      width: 300px;
       height: auto;
       position: absolute;
-      top: 30px;
-      right: 0px;
-    }
+      top: 190px;
+      right: 30px;
 
-    .about-abstract-four {
-      width: 600px;
-      height: auto;
-      position: absolute;
-      top: 10px;
-      right: 150px;
-    }
-
-    .about-abstract-five {
-      width: 400px;
-      height: auto;
-      position: absolute;
-      top: 20px;
-      right: 0px;
-      z-index: 3;
+      @include respond(tablet) {
+        width: 400px;
+        right: 150px;
+        top: 10px;
+        right: 10px;
+        position: absolute;
+      }
+      @include respond(desktop) {
+        width: 600px;
+        right: 150px;
+        top: 10px;
+        right: 10px;
+        position: absolute;
+      }
+      @include respond(desktopxl) {
+        width: 600px;
+        right: 150px;
+        top: 10px;
+        right: 10px;
+        position: absolute;
+      }
     }
   }
 }

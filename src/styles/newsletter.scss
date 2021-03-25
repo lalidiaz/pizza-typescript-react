@@ -25,21 +25,20 @@
       margin-right: 10px;
     }
   }
-  .newsletter-email-btn {
+  .newsletter-btn-input {
     display: flex;
-    align-content: center;
-    justify-content: center;
+    margin-top: 10px;
 
-    input {
+    .newsletter-input {
+      width: 200px;
       font-family: var(--asap);
       outline: transparent;
       border-radius: 5px;
-      margin-right: 10px;
-      color: white;
-      height: 40px;
-      border: transparent;
-      background: var(--yellow-transparent);
-      padding: 10px;
+      margin-right: 5px;
+      color: var(--yellow);
+      font-size: 18px;
+      background: transparent;
+      border: 1px solid var(--yellow);
     }
   }
 }

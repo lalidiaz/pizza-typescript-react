@@ -17,8 +17,8 @@ const NewsletterSocial = () => {
         <div className="newsletter-line" />
         <Title>The latest on Saturnina pizza</Title>
       </div>
-      <div className="newsletter-email-btn">
-        <input placeholder="Email adress" />
+      <div className="newsletter-btn-input">
+        <input placeholder="Email adress" className="newsletter-input" />
         <Button title="send" />
       </div>
     </section>

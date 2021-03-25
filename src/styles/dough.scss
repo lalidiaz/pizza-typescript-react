@@ -13,9 +13,25 @@
   }
 
   .dough-text {
-    width: 50%;
-    margin: 200px auto;
+    width: 100%;
+    margin: 250px auto;
     padding: 30px;
+
+    @include respond(tablet) {
+      width: 50%;
+      margin: 200px auto;
+      padding: 30px;
+    }
+    @include respond(desktop) {
+      width: 50%;
+      margin: 200px auto;
+      padding: 30px;
+    }
+    @include respond(desktopxl) {
+      width: 50%;
+      margin: 200px auto;
+      padding: 30px;
+    }
   }
 
   .dough-images {

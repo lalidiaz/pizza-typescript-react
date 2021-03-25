@@ -1,0 +1,93 @@
+@import "./mixins";
+
+.menu-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include respond(tablet) {
+    flex-direction: column;
+  }
+  @include respond(desktop) {
+    flex-direction: row;
+  }
+  @include respond(desktopxl) {
+    flex-direction: row;
+  }
+
+  .aside-menu {
+    background: var(--yellow);
+    width: 100%;
+    color: white;
+    padding: 150px 30px 0px 30px;
+
+    @include respond(tablet) {
+      width: 100%;
+    }
+    @include respond(desktop) {
+      width: 30%;
+    }
+    @include respond(desktopxl) {
+      width: 30%;
+    }
+
+    .pizzalist-categories-title {
+      padding-top: 30px;
+    }
+    .pizzalist-categories {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .special-offer-wrapper {
+      background-color: var(--red);
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+
+      @include respond(tablet) {
+        margin-top: 50px;
+      }
+      @include respond(desktop) {
+        margin-top: 200px;
+      }
+      @include respond(desktopxl) {
+        margin-top: 200px;
+      }
+
+      .special-img {
+        width: 200px;
+        margin: auto;
+      }
+
+      .special-price {
+        color: var(--lightblue);
+        font-size: 22px;
+      }
+      .special-btn {
+        background-color: var(--lightblue);
+        color: var(--yellow);
+        border: none;
+        width: 60%;
+        margin: 10px auto;
+        font-family: var(--asap);
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        outline: transparent;
+        height: 50px;
+        &:hover {
+          background-color: var(--yellow);
+          color: var(--lightblue);
+        }
+      }
+    }
+  }
+}

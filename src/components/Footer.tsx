@@ -4,7 +4,7 @@ import { IoLogoTiktok } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='footer-wrapper'>
       © 2021- 2022 SATURNINA. All rights reserved.
       <section className="footer-social-media">
         <div className="footer-social-box">

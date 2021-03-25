@@ -14,3 +14,4 @@ import "./about.scss";
 import "./buildyourownpizza.scss";
 import "./pizza.scss";
 import "./reset.scss";
+import "./menu.scss";

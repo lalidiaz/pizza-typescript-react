@@ -54,11 +54,7 @@ const About = () => {
           alt="abstract-vector"
           className="about-abstract-four"
         />
-        <img
-          src={vectorFive}
-          alt="abstract-vector"
-          className="about-abstract-five"
-        />
+
       </div>
     </section>
   );
