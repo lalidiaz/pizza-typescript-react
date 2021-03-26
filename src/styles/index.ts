@@ -15,3 +15,4 @@ import "./buildyourownpizza.scss";
 import "./pizza.scss";
 import "./reset.scss";
 import "./menu.scss";
+import "./burger.scss";

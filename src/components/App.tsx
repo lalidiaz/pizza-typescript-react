@@ -6,6 +6,7 @@ import About from "../pages/about";
 import Menu from "../pages/Menu";
 import Footer from "./Footer";
 import MakeYourOwnPizza from "../pages/MakeYourOwnPizza";
+import Burger from "../components/Burger";
 
 // import Scroll from "./Scroll";
 
@@ -15,6 +16,9 @@ const App = () => {
       {/* <Scroll showBelow={250} /> */}
       <Router>
         <Header />
+        <div className="app-burger">
+          <Burger />
+        </div>
         <Switch>
           <Route exact path="/">
             <Landing />

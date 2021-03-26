@@ -79,7 +79,8 @@ ul {
 .landing-wrapper {
   color: var(--lightblue);
   min-width: 100%;
-  height: auto;
+
+  height: 800px;
   background-image: url(../assets/pizza-slider4.jpeg);
   background-position: center;
   background-size: cover;
@@ -88,52 +89,47 @@ ul {
 
 header {
   width: 100%;
-  height: 300px;
+  height: auto;
   position: fixed;
-
   padding: 50px;
   top: 0px;
   z-index: 101;
   font-family: var(--asap);
   color: white;
-  background: var(--yellow);
 
   @include respond(desktop) {
-    background: transparent;
-    top: 40px;
-    height: 30px;
-    position: absolute;
   }
   @include respond(desktopxl) {
     background: transparent;
     top: 40px;
     height: 50px;
     display: flex;
+    flex-direction: row;
     align-content: center;
     justify-content: center;
     position: absolute;
   }
 
   .header-menu-content {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-around;
-    padding-bottom: 20px;
+    display: none;
 
     @include respond(tablet) {
-      flex-direction: column;
-      padding-bottom: 20px;
+      display: none;
     }
     @include respond(desktop) {
+      display: flex;
       flex-direction: row;
       align-items: center;
+      justify-content: space-between;
+      height: 30px;
+      padding-top: 40px;
       padding-bottom: 0px;
     }
     @include respond(desktopxl) {
+      display: flex;
       flex-direction: row;
       align-items: center;
+      justify-content: space-between;
       height: 30px;
       padding-bottom: 0px;
     }
@@ -157,23 +153,24 @@ header {
       @include respond(desktop) {
         justify-content: right;
         align-content: center;
-        margin: 0px;
+        margin-left: 20px;
       }
       @include respond(desktopxl) {
         justify-content: right;
         align-content: center;
         margin: 0px;
+        margin-left: 20px;
       }
     }
 
     .header-link-menu {
       cursor: pointer;
       list-style: none;
-      position: relative;
       padding: 7px 25px;
       font-size: 23px;
       text-align: center;
       border-radius: 10px;
+
       &:hover {
         background-color: var(--lightblue);
         font-weight: bold;
@@ -245,5 +242,19 @@ header {
         color: white;
       }
     }
+  }
+}
+
+.app-burger {
+  display: flex;
+  @include respond(tablet) {
+    display: flex;
+  }
+  @include respond(desktop) {
+    display: none;
+  }
+
+  @include respond(desktopxl) {
+    display: none;
   }
 }

@@ -1,5 +1,6 @@
 import { PizzaProps } from "../types";
 import { useAddToCart } from "./AddToCart";
+import { motion } from "framer-motion";
 import "../styles";
 
 interface Props {
@@ -19,9 +20,13 @@ const Pizza: React.FC<Props> = ({ pizza }) => {
     <section>
       <img className="pizza-individual-img" src={image} alt="pizza" />
       <div className="pizza-individual-text">
-        <button onClick={handleAddToCartClick} className="btn-addpizza">
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          onClick={handleAddToCartClick}
+          className="btn-addpizza"
+        >
           +
-        </button>
+        </motion.button>
         <p className="pizza-individual-price">${price}</p>
         <p className="pizza-individual-name">{name}</p>
         <p className="pizza-individual-description">{description}</p>

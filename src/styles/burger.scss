@@ -1,0 +1,30 @@
+nav {
+  .burger-menu {
+    background-color: var(--pink);
+    color: white;
+    font-size: 26px;
+    height: 400px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .burger-link-menu {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  .burger-container {
+    z-index: 2;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: auto;
+  }
+}
