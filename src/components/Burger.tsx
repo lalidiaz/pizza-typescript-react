@@ -9,6 +9,9 @@ import { IoPizzaOutline } from "react-icons/io5";
 export default function Burger() {
   const [isOpen, setOpen] = useState(false);
 
+  const handleClick = () => {
+    setOpen(!isOpen);
+  };
   const menuVariants = {
     opened: {
       top: 0,
@@ -29,14 +32,14 @@ export default function Burger() {
           variants={menuVariants}
           className="burger-menu"
         >
-          <Link to="/">
+          <Link to="/" onClick={handleClick}>
             <IoPizzaOutline size={40} color="white" />
           </Link>
           <ul>
             {menu.map((item) => {
               const { id, url, name } = item;
               return (
-                <li className="burger-link-menu">
+                <li className="burger-link-menu" onClick={handleClick}>
                   <Link to={url} key={id}>
                     {name}
                   </Link>
