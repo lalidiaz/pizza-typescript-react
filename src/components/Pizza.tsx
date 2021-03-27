@@ -18,7 +18,14 @@ const Pizza: React.FC<Props> = ({ pizza }) => {
 
   return (
     <section>
-      <img className="pizza-individual-img" src={image} alt="pizza" />
+      <motion.img
+        whileTap={{ rotate: 90, scale: 0.75 }}
+        whileHover={{ rotate: 90 }}
+        transition={{ ease: "linear", duration: 2 }}
+        className="pizza-individual-img"
+        src={image}
+        alt="pizza"
+      />
       <div className="pizza-individual-text">
         <motion.button
           whileHover={{ scale: 1.1 }}

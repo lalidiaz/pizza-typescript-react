@@ -43,5 +43,35 @@
     "id": 9,
     "name": "Goat Cheese",
     "image": "./ingredient9.webp"
+  },
+  {
+    "id": 10,
+    "name": "Peperoni",
+    "image": "./ingredient10.png"
+  },
+  {
+    "id": 11,
+    "name": "Carrots",
+    "image": "./ingredient11.png"
+  },
+  {
+    "id": 12,
+    "name": "Cheese",
+    "image": "./ingredient12.png"
+  },
+  {
+    "id": 13,
+    "name": "Oil",
+    "image": "./ingredient13.png"
+  },
+  {
+    "id": 14,
+    "name": "Corn",
+    "image": "./ingredient14.png"
+  },
+  {
+    "id": 15,
+    "name": "Mushrooms",
+    "image": "./ingredient15.png"
   }
 ]
