@@ -11,6 +11,12 @@ Topics covered:
 - Created a HOC (High Order Component).
 -  Created a Render Props Component.
 - Created a Custom Hook.
+- Framer motion (Animations).
+
+Have fun creating your own pizza, drag and drop the ingredients, hover over the pizzas in menu page and check the latest offers! 
+
+
+
 
 ![pizza-app](https://user-images.githubusercontent.com/60779542/112727685-1b603900-8f3d-11eb-80e9-c9131c032308.png)
 
