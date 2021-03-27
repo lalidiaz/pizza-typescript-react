@@ -65,7 +65,7 @@ const MakeYourOwnPizza = () => {
       <Link to="/drag-and-drop">
         <motion.div
           initial={{ y: 0 }}
-          animate={{ y: 70 }}
+          animate={{ y: 10 }}
           transition={{
             type: "tween",
             ease: "easeInOut",

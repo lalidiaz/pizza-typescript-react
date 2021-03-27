@@ -10,7 +10,6 @@ import vectorSix from "../assets/vector-pink2.png";
 
 import { motion } from "framer-motion";
 
-
 const About = () => {
   return (
     <section className="about-wrapper">
@@ -33,7 +32,7 @@ const About = () => {
         <motion.div
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
-          transition={{ delay: 0.5, duration: 3 }}
+          transition={{ delay: 0.3, duration: 2 }}
           className="about-title-animation"
         >
           <Title>Hi, I am Saturnina.</Title>
@@ -41,7 +40,7 @@ const About = () => {
         <motion.div
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}
-          transition={{ delay: 0.8, duration: 3 }}
+          transition={{ delay: 0.5, duration: 2 }}
           className="about-description-box"
         >
           <Description text="Saturnina is a symbol of courage." />

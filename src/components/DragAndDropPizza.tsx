@@ -1,5 +1,4 @@
 import ingredients from "../data/ingredients.json";
-import Image from "./Image";
 import "../styles";
 import { motion } from "framer-motion";
 import emptyPizza from "../assets/1.png";
@@ -24,13 +23,17 @@ const DragAndDropPizza = () => {
           return (
             <motion.article
               drag
+              whileHover={{ cursor: "grabbing" }}
               whileTap={{ cursor: "grabbing" }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1, duration: 2 }}
               key={id}
             >
-              <Image src={image} alt={name} />
+              <motion.img
+                drag
+                whileHover={{ cursor: "grabbing" }}
+                whileTap={{ cursor: "grabbing" }}
+                src={image}
+                alt={name}
+              />
             </motion.article>
           );
         })}
