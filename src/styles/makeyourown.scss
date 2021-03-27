@@ -5,85 +5,103 @@
   height: 100vh;
   min-height: 100%;
   background-color: var(--pink);
-  display: flex;
+  // display: flex;
+  // flex-direction: column;
+  padding-top: 100px;
   z-index: 1;
 
-  @include respond(tablet) {
-  }
-  @include respond(desktop) {
-  }
-  @include respond(desktopxl) {
-  }
+  text-align: center;
 
   .makeyourown-text {
-    width: 50%;
-    height: 100%;
-    top: 30px;
-    .makeyourown-title {
+    color: white;
+  }
+  .makeyourown-toppings-animation {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+
+    height: 500px;
+    position: relative;
+
+    div:nth-child(1) {
       position: absolute;
-      z-index: 4;
-      padding-top: 200px;
-      padding-left: 30px;
-      color: white;
-      .makeyourown-ingredients-list {
-        .makeyourown-ul {
-          display: flex;
-          font-size: 22px;
-          flex-direction: column;
-          .makeyourown-li {
-            padding-top: 5px;
-            padding-bottom: 5px;
-            &:hover {
-              color: white;
-              cursor: pointer;
-            }
-          }
+
+      .pizza-empty {
+        @include respond(tablet) {
+        }
+        @include respond(desktop) {
+        }
+        @include respond(desktopxl) {
         }
       }
     }
-    .makeyourown-abstractTwo {
-      top: 100px;
-      left: 0px;
-      z-index: 3;
-      position: relative;
+    div:nth-child(2) {
+      position: absolute;
 
-      @include respond(tablet) {
-        top: 250px;
-      }
-      @include respond(desktop) {
-        top: 250px;
-      }
-      @include respond(desktopxl) {
-        top: 250px;
+
+      .pizza-topping-one {
+        @include respond(tablet) {
+        }
+        @include respond(desktop) {
+        }
+        @include respond(desktopxl) {
+        }
       }
     }
-    .makeyourown-abstract {
+    div:nth-child(3) {
       position: absolute;
-      width: 350px;
-      top: 60px;
-      left: 20px;
-      z-index: 2;
+      // min-width: 100vw;
+      // padding-top: 130px;
+      .pizza-topping-two {
+        @include respond(tablet) {
+        }
+        @include respond(desktop) {
+        }
+        @include respond(desktopxl) {
+        }
+      }
+    }
+    div:nth-child(4) {
+      position: absolute;
 
+      .pizza-topping-three {
+        @include respond(tablet) {
+        }
+        @include respond(desktop) {
+        }
+        @include respond(desktopxl) {
+        }
+      }
+    }
+  }
+
+  .drag-and-drop {
+    width: 50%;
+    height: 100%;
+    padding-top: 150px;
+    padding-right: 30px;
+    text-align: center;
+    color: white;
+
+    .drag-and-drop-title {
       @include respond(tablet) {
-        width: 500px;
       }
       @include respond(desktop) {
-        width: 500px;
+        font-size: 30px;
       }
       @include respond(desktopxl) {
-        width: 600px;
       }
     }
   }
   .makeyourown-images {
     width: 50%;
-    height: 100%;
 
+    //green pepper
     article:nth-child(1) {
       position: absolute;
       top: 100px;
       right: 100px;
-      z-index: 3;
+     
 
       @include respond(tablet) {
         top: 200px;
@@ -94,15 +112,17 @@
         right: 200px;
       }
       @include respond(desktopxl) {
-        top: 160px;
-        right: 200px;
+        top: 220px;
+        right: 100px;
       }
     }
+
+    //flour
     article:nth-child(2) {
       position: absolute;
       top: 300px;
       right: 10px;
-      z-index: 3;
+
 
       @include respond(tablet) {
         top: 300px;
@@ -113,16 +133,17 @@
         right: 300px;
       }
       @include respond(desktopxl) {
-        top: 300px;
-        right: 300px;
+        top: 290px;
+        right: 0px;
       }
     }
 
+    //onions
     article:nth-child(3) {
       position: absolute;
       top: 250px;
       right: 100px;
-      z-index: 3;
+  
 
       @include respond(tablet) {
         top: 550px;
@@ -134,15 +155,16 @@
       }
       @include respond(desktopxl) {
         top: 500px;
-        right: 150px;
+        right: 0px;
       }
     }
 
+    //basil
     article:nth-child(4) {
       position: absolute;
       top: 440px;
       right: 20px;
-      z-index: 3;
+  
 
       @include respond(tablet) {
         top: 420px;
@@ -153,16 +175,17 @@
         right: 100px;
       }
       @include respond(desktopxl) {
-        top: 410px;
+        top: 630px;
         right: 50px;
       }
     }
 
+    //tomato
     article:nth-child(5) {
       position: absolute;
       top: 30px;
       right: 20px;
-      z-index: 3;
+
 
       @include respond(tablet) {
         top: 100px;
@@ -171,31 +194,33 @@
         top: 100px;
       }
       @include respond(desktopxl) {
-        top: 100px;
+        top: 730px;
+        right: 100px;
       }
     }
 
+    //chilli pepper
     article:nth-child(6) {
       position: absolute;
       top: 50px;
       right: 250px;
-      z-index: 3;
+      // z-index: 3;
 
       @include respond(desktop) {
         top: 50px;
         right: 400px;
       }
       @include respond(desktopxl) {
-        top: 50px;
-        right: 700px;
+        top: 200px;
+        right: 600px;
       }
     }
 
+    //garlic
     article:nth-child(7) {
       position: absolute;
       top: 400px;
       right: 150px;
-      z-index: 3;
 
       @include respond(tablet) {
         top: 280px;
@@ -206,16 +231,16 @@
         right: 440px;
       }
       @include respond(desktopxl) {
-        top: 280px;
+        top: 250px;
         right: 500px;
       }
     }
 
+    //black pepper
     article:nth-child(8) {
       position: absolute;
       top: 600px;
       right: 50px;
-      z-index: 3;
 
       @include respond(tablet) {
         top: 500px;
@@ -226,16 +251,16 @@
         right: 400px;
       }
       @include respond(desktopxl) {
-        top: 500px;
-        right: 400px;
+        top: 400px;
+        right: 620px;
       }
     }
 
+    //cheese
     article:nth-child(9) {
       position: absolute;
       top: 500px;
       right: 130px;
-      z-index: 3;
 
       @include respond(tablet) {
         top: 550px;
@@ -246,11 +271,107 @@
         right: 350px;
       }
       @include respond(desktopxl) {
-        top: 550px;
-        right: 350px;
+        top: 700px;
+        right: 550px;
       }
     }
 
+    //peperoni
+    article:nth-child(10) {
+      position: absolute;
+      top: 100px;
+      right: 500px;
+
+      @include respond(tablet) {
+        top: 550px;
+        right: 500px;
+      }
+      @include respond(desktop) {
+        top: 550px;
+        right: 500px;
+      }
+      @include respond(desktopxl) {
+        top: 550px;
+        right: 600px;
+      }
+    }
+
+    //carrot
+    article:nth-child(11) {
+      position: absolute;
+      z-index: 3;
+      top: 400px;
+      right: 0px;
+
+      @include respond(tablet) {
+        top: 340px;
+        right: 0px;
+      }
+      @include respond(desktop) {
+        top: 400px;
+        right: 0px;
+      }
+      @include respond(desktopxl) {
+        top: 750px;
+        right: 230px;
+      }
+    }
+
+    //cheese
+    article:nth-child(12) {
+      position: absolute;
+
+      @include respond(tablet) {
+      }
+      @include respond(desktop) {
+      }
+      @include respond(desktopxl) {
+        top: 840px;
+        right: 180px;
+      }
+    }
+
+    //corn
+    article:nth-child(13) {
+      position: absolute;
+
+      @include respond(tablet) {
+      }
+      @include respond(desktop) {
+      }
+      @include respond(desktopxl) {
+        top: 800px;
+        right: 380px;
+      }
+    }
+
+    //mushrooms
+    article:nth-child(14) {
+      position: absolute;
+
+      @include respond(tablet) {
+      }
+      @include respond(desktop) {
+      }
+      @include respond(desktopxl) {
+        top: 450px;
+        right: 600px;
+      }
+    }
+
+    //tomato sauce
+    article:nth-child(15) {
+      position: absolute;
+
+      @include respond(tablet) {
+      }
+      @include respond(desktop) {
+      }
+      @include respond(desktopxl) {
+        top: 800px;
+        right: 450px;
+      }
+    }
     .makeyourown-blue {
       width: 300px;
       top: 400px;

@@ -1,50 +1,97 @@
-import Title from "../components/Title";
 import "../styles";
-import ingredients from "../data/ingredients.json";
-import Image from "../components/Image";
-import abstract from "../assets/vector-yellow.png";
-import abstractTwo from "../assets/vector-2.png";
-import abstractThree from "../assets/vector-blue1.png";
+
+import { motion } from "framer-motion";
+import Title from "../components/Title";
+
+import Button from "../components/Button";
+import { Link } from "react-router-dom";
+
+//toppings animation
+import emptyPizza from "../assets/1.png";
+import topping1 from "../assets/2.png";
+import topping2 from "../assets/3.png";
+import topping3 from "../assets/4.png";
 
 const MakeYourOwnPizza = () => {
   return (
     <div className="makeyourown-wrapper">
       <div className="makeyourown-text">
-        <div className="makeyourown-title">
-          <Title>make your own pizza</Title>
-          <div className="makeyourown-ingredients-list">
-            <ul className="makeyourown-ul">
-              {ingredients.map((ingredient) => {
-                const { id, name } = ingredient;
-                return (
-                  <li className="makeyourown-li" key={id}>
-                    {name}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </div>
-
-        <img src={abstractTwo} alt="vector-abstract" className="makeyourown-abstractTwo" />
-        <img src={abstract} alt="vector-abstract" className="makeyourown-abstract" />
+        <Title>Make your own pizza</Title>
       </div>
 
-      <div className="makeyourown-images">
-        {ingredients.map((ingredient) => {
-          const { id, name, image } = ingredient;
-          return (
-            <article key={id}>
-              <Image src={image} alt={name} />
-            </article>
-          );
-        })}
-        <img
-          src={abstractThree}
-          alt="abstract-shape"
-          className="makeyourown-blue"
-        />
+      <div className="makeyourown-toppings-animation">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 4, duration: 3 }}
+        >
+          <img src={emptyPizza} alt="pizza-empty" className="pizza-empty" />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5, duration: 2 }}
+        >
+          <img
+            src={topping1}
+            alt="pizza-topping-one"
+            className="pizza-topping-one"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 5.5, duration: 2 }}
+        >
+          <img
+            src={topping2}
+            alt="pizza-topping-two"
+            className="pizza-topping-two"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 7.5, duration: 2 }}
+        >
+          <img
+            src={topping3}
+            alt="pizza-topping-three"
+            className="pizza-topping-three"
+          />
+        </motion.div>
       </div>
+
+      {/* <motion.div
+        initial={{ y: 0 }}
+        animate={{ y: 70 }}
+        transition={{
+          type: "tween",
+          ease: "easeInOut",
+          duration: 2,
+          repeat: Infinity,
+          repeatType: "reverse",
+        }}
+  
+      >
+        <TiArrowDownOutline color="white" size={50} />
+      </motion.div> */}
+
+      <Link to="/drag-and-drop">
+        <motion.div
+          initial={{ y: 0 }}
+          animate={{ y: 70 }}
+          transition={{
+            type: "tween",
+            ease: "easeInOut",
+            duration: 2,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+        >
+          <Button title="Drag and Drop" />
+        </motion.div>
+      </Link>
     </div>
   );
 };

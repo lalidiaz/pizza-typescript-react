@@ -7,6 +7,7 @@ import Menu from "../pages/Menu";
 import Footer from "./Footer";
 import MakeYourOwnPizza from "../pages/MakeYourOwnPizza";
 import Burger from "../components/Burger";
+import DragAndDropPizza from "./DragAndDropPizza";
 
 // import Scroll from "./Scroll";
 
@@ -31,6 +32,9 @@ const App = () => {
           </Route>
           <Route path="/make-your-own-pizza">
             <MakeYourOwnPizza />
+          </Route>
+          <Route path="/drag-and-drop">
+            <DragAndDropPizza />
           </Route>
         </Switch>
         <Footer />
