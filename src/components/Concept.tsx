@@ -3,6 +3,8 @@ import { CgArrowLongRight } from "react-icons/cg";
 import "../styles/index";
 import Title from "../components/Title";
 import Description from "../components/Description";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Concept = () => {
   return (
@@ -16,14 +18,26 @@ const Concept = () => {
           vel sapiente delectus fugit. Temporibus ad molestiae eius culpa optio
           saepe impedit."
         />
-        <button className="concept-see-more">
-          <CgArrowLongRight />
-          See More
-        </button>
+        <Link to="/about">
+          <motion.button
+            initial={{ x: 0 }}
+            animate={{ x: 40 }}
+            transition={{
+              type: "tween",
+              ease: "easeInOut",
+              duration: 2,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
+            className="concept-see-more"
+          >
+            <CgArrowLongRight />
+            See More
+          </motion.button>
+        </Link>
       </div>
-      <div>
-        <img src={pizzaConcept} alt="concept-pizza" className="concept-image" />
-      </div>
+
+      <img src={pizzaConcept} alt="concept-pizza" className="concept-image" />
     </section>
   );
 };

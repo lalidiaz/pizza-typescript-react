@@ -1,9 +1,12 @@
 import Pizza from "./Pizza";
 import pizzas from "../data/pizzas.json";
 
+
 const PizzasList = () => {
   return (
-    <section className="pizzalist-wrapper">
+    <section
+      className="pizzalist-wrapper"
+    >
       <ul className="pizzalist-grid">
         {pizzas.map((pizza) => {
           return (

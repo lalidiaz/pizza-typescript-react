@@ -17,7 +17,11 @@ const Pizza: React.FC<Props> = ({ pizza }) => {
   };
 
   return (
-    <section>
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1, duration: 2 }}
+    >
       <motion.img
         whileTap={{ rotate: 90, scale: 0.75 }}
         whileHover={{ rotate: 90 }}
@@ -38,7 +42,7 @@ const Pizza: React.FC<Props> = ({ pizza }) => {
         <p className="pizza-individual-name">{name}</p>
         <p className="pizza-individual-description">{description}</p>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

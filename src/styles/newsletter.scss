@@ -13,6 +13,10 @@
     display: flex;
     width: 50%;
     justify-content: space-around;
+
+    .newsletter-icon:hover {
+      color: var(--pink);
+    }
   }
   .newsletter-letter {
     display: flex;
