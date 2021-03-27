@@ -1,0 +1,11 @@
+@import "./mixins";
+
+.drag-and-drop-wrapper {
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  padding-right: 30px;
+  text-align: center;
+  color: white;
+  background-color: var(--red);
+}

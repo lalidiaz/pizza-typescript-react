@@ -23,14 +23,14 @@ const MakeYourOwnPizza = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 4, duration: 3 }}
+          transition={{ delay: 1, duration: 3 }}
         >
           <img src={emptyPizza} alt="pizza-empty" className="pizza-empty" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 2 }}
+          transition={{ delay: 3.5, duration: 2 }}
         >
           <img
             src={topping1}
@@ -41,7 +41,7 @@ const MakeYourOwnPizza = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 5.5, duration: 2 }}
+          transition={{ delay: 4.5, duration: 2 }}
         >
           <img
             src={topping2}
@@ -52,7 +52,7 @@ const MakeYourOwnPizza = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 7.5, duration: 2 }}
+          transition={{ delay: 5.5, duration: 2 }}
         >
           <img
             src={topping3}
@@ -61,21 +61,6 @@ const MakeYourOwnPizza = () => {
           />
         </motion.div>
       </div>
-
-      {/* <motion.div
-        initial={{ y: 0 }}
-        animate={{ y: 70 }}
-        transition={{
-          type: "tween",
-          ease: "easeInOut",
-          duration: 2,
-          repeat: Infinity,
-          repeatType: "reverse",
-        }}
-  
-      >
-        <TiArrowDownOutline color="white" size={50} />
-      </motion.div> */}
 
       <Link to="/drag-and-drop">
         <motion.div

@@ -6,7 +6,7 @@ import emptyPizza from "../assets/1.png";
 
 const DragAndDropPizza = () => {
   return (
-    <div className="drag-and-drop">
+    <div className="drag-and-drop-wrapper">
       <h3 className="drag-and-drop-title">Drag and drop</h3>
 
       <img src={emptyPizza} alt="pizza-empty" className="pizza-empty-drag" />

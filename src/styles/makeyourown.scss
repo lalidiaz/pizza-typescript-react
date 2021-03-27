@@ -5,12 +5,19 @@
   height: 100vh;
   min-height: 100%;
   background-color: var(--pink);
-  // display: flex;
-  // flex-direction: column;
   padding-top: 100px;
   z-index: 1;
-
   text-align: center;
+
+  @include respond(tablet) {
+    padding-top: 50px;
+  }
+  @include respond(desktop) {
+    padding-top: 100px;
+  }
+  @include respond(desktopxl) {
+    padding-top: 100px;
+  }
 
   .makeyourown-text {
     color: white;
@@ -20,44 +27,64 @@
     display: flex;
     justify-content: center;
 
-    height: 500px;
+    height: 350px;
     position: relative;
+
+    @include respond(tablet) {
+      height: 400px;
+    }
+    @include respond(desktop) {
+      height: 600px;
+    }
+    @include respond(desktopxl) {
+      height: 600px;
+    }
 
     div:nth-child(1) {
       position: absolute;
 
       .pizza-empty {
+        width: 300px;
         @include respond(tablet) {
+          width: 400px;
         }
         @include respond(desktop) {
+          width: 600px;
         }
         @include respond(desktopxl) {
+          width: 600px;
         }
       }
     }
     div:nth-child(2) {
       position: absolute;
 
-
       .pizza-topping-one {
+        width: 300px;
         @include respond(tablet) {
+          width: 400px;
         }
         @include respond(desktop) {
+          width: 600px;
         }
         @include respond(desktopxl) {
+          width: 600px;
         }
       }
     }
     div:nth-child(3) {
       position: absolute;
-      // min-width: 100vw;
-      // padding-top: 130px;
+
       .pizza-topping-two {
+        width: 300px;
         @include respond(tablet) {
+          width: 400px;
         }
         @include respond(desktop) {
+          width: 600px;
         }
         @include respond(desktopxl) {
+          width: 600px;
         }
       }
     }
@@ -65,31 +92,16 @@
       position: absolute;
 
       .pizza-topping-three {
+        width: 300px;
         @include respond(tablet) {
+          width: 400px;
         }
         @include respond(desktop) {
+          width: 600px;
         }
         @include respond(desktopxl) {
+          width: 600px;
         }
-      }
-    }
-  }
-
-  .drag-and-drop {
-    width: 50%;
-    height: 100%;
-    padding-top: 150px;
-    padding-right: 30px;
-    text-align: center;
-    color: white;
-
-    .drag-and-drop-title {
-      @include respond(tablet) {
-      }
-      @include respond(desktop) {
-        font-size: 30px;
-      }
-      @include respond(desktopxl) {
       }
     }
   }
@@ -101,7 +113,6 @@
       position: absolute;
       top: 100px;
       right: 100px;
-     
 
       @include respond(tablet) {
         top: 200px;
@@ -123,7 +134,6 @@
       top: 300px;
       right: 10px;
 
-
       @include respond(tablet) {
         top: 300px;
         right: 300px;
@@ -143,7 +153,6 @@
       position: absolute;
       top: 250px;
       right: 100px;
-  
 
       @include respond(tablet) {
         top: 550px;
@@ -164,7 +173,6 @@
       position: absolute;
       top: 440px;
       right: 20px;
-  
 
       @include respond(tablet) {
         top: 420px;
@@ -185,7 +193,6 @@
       position: absolute;
       top: 30px;
       right: 20px;
-
 
       @include respond(tablet) {
         top: 100px;
