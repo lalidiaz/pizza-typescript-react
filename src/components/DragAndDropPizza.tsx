@@ -3,13 +3,15 @@ import Image from "./Image";
 import "../styles";
 import { motion } from "framer-motion";
 import emptyPizza from "../assets/1.png";
+import Title from "../components/Title";
 
 const DragAndDropPizza = () => {
   return (
     <div className="drag-and-drop-wrapper">
-      <h3 className="drag-and-drop-title">Drag and drop</h3>
+      <Title>Drag and drop </Title>
 
       <img src={emptyPizza} alt="pizza-empty" className="pizza-empty-drag" />
+      
       <div className="drag-and-drop-images">
         {ingredients.map((ingredient) => {
           const { id, name, image } = ingredient;
