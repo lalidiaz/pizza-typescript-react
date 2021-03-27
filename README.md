@@ -1,4 +1,4 @@
-# pizza-typescript-react
+# pizza-typescript-react 🍕
 
 Typescript + ReactJs
 
