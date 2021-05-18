@@ -2,7 +2,7 @@
 
 Typescript + ReactJs
 
-https://pizza-app-phi.vercel.app/
+To see the demo clone the repo and run npm install :)
 
 I had so much fun creating this Pizza app. 
 Topics covered: 
